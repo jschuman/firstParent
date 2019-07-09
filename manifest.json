@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+
+    "name": "FirstParent",
+    "description": "Sets Firstparent view",
+    "version": "1.0",
+
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+
+    "content_scripts" : [{
+        "matches" : [ "https://tfs.deltek.com/tfs/Deltek/_git/Vantagepoint/*"],
+        "all_frames": true,
+        "js" : ["loader.js"],
+        "run_at": "document_end"
+    }],
+    "permissions": ["activeTab"]
+}
