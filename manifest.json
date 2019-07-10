@@ -13,7 +13,10 @@
         "matches" : [ "https://tfs.deltek.com/tfs/Deltek/_git/Vantagepoint/*"],
         "all_frames": true,
         "js" : ["loader.js"],
-        "run_at": "document_end"
+        "run_at": "document_idle"
     }],
+    
+    "web_accessible_resources": ["script.js"],
+    
     "permissions": ["activeTab"]
 }
