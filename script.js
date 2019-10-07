@@ -12,7 +12,7 @@ var doIt = function() {
     }
     if (ddwn.children[0].innerHTML == 'First parent') { console.log("already set."); return ;}
     ddwn.click();
-    var firstParent = document.getElementsByClassName("ms-Dropdown-optionText optionText_8ad48cc5")[1]; // second item in list
+    var firstParent = document.getElementsByClassName("ms-Dropdown-optionText optionText_14ffa1bb")[1]; // second item in list
     firstParent.click();
     setTimeout(scrollBottom, 500);
  }
